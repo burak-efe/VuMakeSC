@@ -1,0 +1,11 @@
+Model Information:
+* title:	F-16 jet
+* source:	https://sketchfab.com/3d-models/f-16-jet-69c32a15b8e24d6ebf276b76dde3ab95
+* author:	RickSlash (https://sketchfab.com/RickSlash)
+
+Model License:
+* license type:	CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
+* requirements:	Author must be credited. Commercial use is allowed.
+
+If you use this 3D model in your project be sure to copy paste this credit wherever you share it:
+This work is based on "F-16 jet" (https://sketchfab.com/3d-models/f-16-jet-69c32a15b8e24d6ebf276b76dde3ab95) by RickSlash (https://sketchfab.com/RickSlash) licensed under CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
