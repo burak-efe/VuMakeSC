@@ -13,9 +13,8 @@ Also: <br>
 - fastgltf : for gltf loading <br>
 - glm : for math <br>
 - stb_image : for texture load <br>
-- slang : shader language and as spirv emitter  <be
-                                               >
-Also let loader to get its VKSC-ValidationLayers from regular NVIDIA driver, instead of compiling myself. <br>
+- slang : shader language and as spirv emitter  <br>
+Also I let loader to get its VKSC-ValidationLayers from regular NVIDIA driver, instead of compiling myself. <br>
 
 Used Vulkan Features: <br>
 - buffer device address <br>
