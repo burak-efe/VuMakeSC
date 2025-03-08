@@ -18,16 +18,16 @@ namespace Vu {
     struct VuRenderer {
     public:
         std::vector<VkCommandBuffer> commandBuffers;
-        std::vector<VkSemaphore> imageAvailableSemaphores;
-        std::vector<VkSemaphore> renderFinishedSemaphores;
-        std::vector<VkFence> inFlightFences;
-        std::vector<VuBuffer> uniformBuffers;
+        std::vector<VkSemaphore>     imageAvailableSemaphores;
+        std::vector<VkSemaphore>     renderFinishedSemaphores;
+        std::vector<VkFence>         inFlightFences;
+        std::vector<VuBuffer>        uniformBuffers;
 
         VkSurfaceKHR surface;
-        VuSwapChain swapChain;
+        VuSwapChain  swapChain;
         //ImGui_ImplVulkanH_Window imguiMainWindowData;
 
-        uint32 currentFrame = 0;
+        uint32 currentFrame           = 0;
         uint32 currentFrameImageIndex = 0;
 
         VuHandle<VuTexture> debugTexture0;
@@ -38,7 +38,9 @@ namespace Vu {
 
         VkPipelineCache pipelineCache;
 
-        void init(std::vector<char>& pipelineCache);
+        void init(std::vector<char>&         pipelineCache,
+                  VkPhysicalDeviceFeatures2& physicalDeviceFeatures2WithChain,
+                  VkPipelineCacheCreateInfo& pipelineCacheCreateInfo);
 
         void uninit();
 
@@ -50,7 +52,7 @@ namespace Vu {
 
         void endFrame();
 
-        void bindMesh( VuMesh& mesh);
+        void bindMesh(VuMesh& mesh);
 
         void bindMaterial(const VuMaterial& material);
 
@@ -60,7 +62,6 @@ namespace Vu {
 
         void updateFrameConstantBuffer(GPU_FrameConst ubo);
 
-
     private:
         void waitForFences();
 
@@ -68,7 +69,7 @@ namespace Vu {
 
         void endRecordCommandBuffer(const VkCommandBuffer& commandBuffer, uint32 imageIndex);
 
-        void initVulkanDevice(std::vector<char>& pipelineCacheBlob);
+        void initVulkanDevice(std::vector<char>& pipelineCacheBlob, VkPhysicalDeviceFeatures2& physicalDeviceFeaturesWithChain);
 
         void initVulkanInstance();
 

@@ -60,7 +60,6 @@ namespace Vu {
 
         void initPhysicalDevice() {
             createPhysicalDevice(instance, physicalDevice);
-            PrintDisplayProperties(physicalDevice);
         }
 
         void initDevice(const VuDeviceCreateInfo& info) {
